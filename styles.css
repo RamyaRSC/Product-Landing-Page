@@ -1,0 +1,320 @@
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 50px;
+  
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  background-color: #dfdfdfbe;
+}
+
+#nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  padding: 0px;
+  margin: 0px;
+  font-size: 15px;
+  background-color: rgba(247, 233, 197, 0.792);
+  z-index: 10;
+}
+
+.sticky {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+} 
+
+#header-img {
+  height: 40px;
+  width: 50px;
+}
+
+#nav-left {
+  display: flex;
+  padding: 5px;
+  align-items: center;
+}
+
+#nav-right {
+  display: flex;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}
+
+#home {
+  display: flex;
+  height: 80vh;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://wallpapers.com/images/featured/wmhqt5jyr77cxa4v.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#homePage{
+  background-color: rgba(247, 233, 197, 0.792);
+  border-radius: 100%;
+  aspect-ratio: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center ;
+  height: 300px;
+}
+
+#heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#menuHeading{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#menu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  position: relative;
+  justify-content : center;
+}
+
+#card{
+  position: relative;
+  height: 200px;
+  transition: 0.5 ease;
+  margin: 20px;
+  
+}
+
+#card a{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFEBC9;
+  border-radius: 10px;
+  height: 200px;
+  position: relative;
+  transition: 0.5s ease;
+  z-index: 7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#card a:hover {
+  transform: translate(-30px, -30px);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#borderdiv{
+  position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border: 2px solid black;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+#cardPhoto {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#cardimg {
+  display: flex;
+  height: 120px;
+  width: 120px;
+  border-radius: 20px;
+  align-items: center;
+  padding: 15px;
+}
+
+#cardTitle {
+  display: flex;
+}
+
+#cardFooter {
+  display: flex;
+  align-items: center;
+}
+
+#oneButton {
+  height: 30px;
+  width: 50px;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  margin-left: 50px;
+  border: black;
+  background-color: rgba(255, 255, 255, 0.616);
+}
+
+#main {
+  display: flex;
+}
+
+#socialMediaImg {
+  height: 100px;
+  width: 100px;
+}
+
+#aboutUs {
+  display: flex;
+  flex-direction: column;
+}
+
+#main {
+  /* background-image: url("https://media.istockphoto.com/id/500460896/photo/coffee-beans-on-a-white-background.jpg?s=612x612&w=0&k=20&c=ivzYj3n3ER3Ez3wRCal-MJgi-nsPCAE2yx-ZpG6TmHk="); */
+  /* background-size: cover; */
+  height: 500px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  padding: 0px 50px 0px 50px;
+}
+
+#mainbg {
+  display: flex;
+  background-color: rgba(207, 207, 207, 0.7);
+  margin: auto;
+}
+
+#getInTouch,
+#quickLinks,
+#servicesFooter {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+#getInTouchText {
+  padding: 10px 10px 10px 0px;
+  border-bottom: 2px solid black;
+}
+
+#quickLinksText {
+  padding: 10px 10px 10px 0px;
+  border-bottom: 2px solid black;
+}
+
+#links {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  padding: 0px;
+  margin: 0px
+}
+
+#links a {
+  text-decoration: none;
+  color: black;
+  padding: 5px 10px 5px 0px;
+}
+
+#servicesFooterText {
+  padding: 10px 10px 10px 0px;
+  border-bottom: 2px solid black;
+}
+
+#servicesFooterText a {
+  text-decoration: none;
+  color: black;
+}
+
+#servicelinks {
+  display: flex;
+  flex-direction: column;
+}
+
+#servicelinks a {
+  text-decoration: none;
+  color: black;
+  padding: 5px 10px 5px 0px;
+}
+
+#servicelinks a:hover,
+#links a:hover {
+  color: var(--g);
+}
+
+#address, #mail, #number {
+  display: flex;
+  height: 30px;
+  align-items: center;
+}
+
+#iconAdd,#iconMail,#iconNumber {
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+}
+
+#iconAdd img, #iconMail img, #iconNumber img {
+  height: 20px;
+  width: 20px;
+}
+
+#socialMedia {
+  display: flex;
+  justify-content: center;
+  border-top: 2px solid black;
+  margin-top: 10px;
+}
+
+#socialMedia img {
+  height: 50px;
+  width: 50px;
+  padding: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+#socialMedia img:hover {
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.2);
+}
+
+#footer {
+  background-color: #1a1a1a;
+  color: white;
+  height: 50px;
+  align-items: baseline;
+}
+
+#footer p {
+  color: #dfdfdfbe;
+  text-align: right;
+  padding-right: 100px;
+  font-size: 12px;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+
+  /* styles for screens with a maximum width of 768 pixels */
+  body {
+    font-size: 16px;
+  }
+}
